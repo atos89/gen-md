@@ -16,4 +16,7 @@ gulp.task('serve', () => {
     });
 })
 
-gulp.task('default', ['serve']);
+gulp.task(
+    'default',
+    ['build', 'serve']
+);
