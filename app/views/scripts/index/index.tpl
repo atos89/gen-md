@@ -5,6 +5,6 @@
     <title></title>
   </head>
   <body>
-    <?php phpinfo(); ?>
+    <p><!--$obj->mess--></p>
   </body>
 </html>
