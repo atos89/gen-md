@@ -1,8 +1,12 @@
 'use strict';
 
 const gulp = require('gulp');
+const runSequence = require('run-sequence');
 
-gulp.task(
-    'default',
-    ['build', 'serve', 'watch']
-);
+gulp.task('default', function (callback) {
+    return runSequence(
+        ['build', 'serve'],
+        'watch',
+        callback
+    );
+});
