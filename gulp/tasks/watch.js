@@ -22,7 +22,7 @@ gulp.task('watch:stylus', () => {
 });
 
 gulp.task('watch:php', () => {
-    gulp.watch(config.paths.src.root + '/*.php', ['copy:php']);
+    // gulp.watch(config.paths.src.root + '/*.php', ['copy:php']);
 });
 
 gulp.task('watch:dist', () => {
