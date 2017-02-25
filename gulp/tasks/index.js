@@ -4,5 +4,5 @@ const gulp = require('gulp');
 
 gulp.task(
     'default',
-    ['build', 'serve']
+    ['build', 'serve', 'watch']
 );

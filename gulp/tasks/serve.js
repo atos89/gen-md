@@ -14,4 +14,4 @@ gulp.task('serve', () => {
           open: true
       });
     });
-})
+});
