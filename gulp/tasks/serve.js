@@ -6,7 +6,7 @@ const connect = require('gulp-connect-php');
 
 gulp.task('serve', () => {
     connect.server({
-        base: 'dist',
+        base: 'httpdocs',
         port: 8000
     }, function () {
       browserSync({

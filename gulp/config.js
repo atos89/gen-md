@@ -8,10 +8,10 @@ const paths = {
         stylus: './src/assets/stylus'
     },
     dst: {
-        root: './dist',
-        assets: './dist/assets',
-        js: './dist/assets/js',
-        css: './dist/assets/css'
+        root: './httpdocs',
+        assets: './httpdocs/assets',
+        js: './httpdocs/assets/js',
+        css: './httpdocs/assets/css'
     }
 };
 
