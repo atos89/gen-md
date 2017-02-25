@@ -5,7 +5,7 @@ const runSequence = require('run-sequence');
 
 gulp.task('default', function (callback) {
     return runSequence(
-        ['build', 'serve'],
+        ['build', 'copy', 'serve'],
         'watch',
         callback
     );
