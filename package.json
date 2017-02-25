@@ -19,6 +19,7 @@
   "homepage": "https://github.com/atos89/gen-md#readme",
   "devDependencies": {
     "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-connect-php": "0.0.8",
     "gulp-csso": "^2.0.0",
