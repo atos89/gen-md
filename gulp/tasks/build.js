@@ -15,6 +15,10 @@ gulp.task('build:js', () => {
         config.paths.src.js + '/*.js'
     ])
     .pipe(uglify())
+    .pipe(rename({
+        basename: 'gen-md',
+        extname: '.js'
+    }))
     .pipe(gulp.dest(config.paths.dst.js));
 });
 
