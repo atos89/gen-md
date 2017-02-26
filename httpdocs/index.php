@@ -1,6 +1,6 @@
 <?php
 
-require_once('./define.php');
+require_once dirname(realpath(__FILE__)) . '/define.php';
 
 $request_uri = trim(preg_replace('/\//', ' ', $_SERVER['REQUEST_URI']));
 $routes = explode(' ', $request_uri);
@@ -18,7 +18,7 @@ if ($routes[0] === '' || count($routes) >= 3) { // ex. / or /path/to/anything
 
 $controller_class = $class . 'Controller';
 if ($class !== 'Index' && file_exists(CONTROLLERS_PATH . '/' . $controller_class . '.php')) {
-    require_once(CONTROLLERS_PATH . '/' . $controller_class . '.php');
+    require_once CONTROLLERS_PATH . '/' . $controller_class . '.php';
     $controller = new $controller_class();
     if (method_exists($controller, $method)) {
         // コントローラークラスにメソッドがあったらコントローラークラスに処理を委譲する
@@ -27,7 +27,7 @@ if ($class !== 'Index' && file_exists(CONTROLLERS_PATH . '/' . $controller_class
     }
 }
 
-require_once(CONTROLLERS_PATH . '/IndexController.php');
+require_once CONTROLLERS_PATH . '/IndexController.php';
 $controller = new IndexController();
 $controller->index();
 exit;

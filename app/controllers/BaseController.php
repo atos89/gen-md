@@ -1,6 +1,6 @@
 <?php
 
-require_once(ROOT_PATH . '/libs/Smarty/Smarty.class.php');
+require_once ROOT_PATH . '/libs/Smarty/Smarty.class.php';
 
 class BaseController
 {

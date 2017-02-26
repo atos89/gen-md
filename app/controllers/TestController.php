@@ -1,6 +1,6 @@
 <?php
 
-require_once(CONTROLLERS_PATH . '/BaseController.php');
+require_once CONTROLLERS_PATH . '/BaseController.php';
 
 class TestController extends BaseController
 {

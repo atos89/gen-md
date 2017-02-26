@@ -3,11 +3,11 @@
 const gulp = require('gulp');
 const config = require('../config');
 
-gulp.task('copy', ['copy:php']);
+gulp.task('copy', ['copy:libs']);
 
-gulp.task('copy:php', () => {
+gulp.task('copy:libs', () => {
     return gulp.src([
-        config.paths.src.root + '/*.php'
+        config.paths.src.libs + '/**/*'
     ])
-    .pipe(gulp.dest(config.paths.dst.root));
+    .pipe(gulp.dest(config.paths.dst.libs));
 });
