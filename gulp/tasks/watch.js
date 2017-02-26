@@ -9,6 +9,7 @@ gulp.task('watch', () => {
         'watch:js',
         'watch:stylus',
         'watch:php',
+        'watch:app',
         'watch:dist'
     );
 });
@@ -23,6 +24,10 @@ gulp.task('watch:stylus', () => {
 
 gulp.task('watch:php', () => {
     // gulp.watch(config.paths.src.root + '/*.php', ['copy:php']);
+});
+
+gulp.task('watch:app', () => {
+    gulp.watch(config.paths.src.app + '/**/*', ['reload']);
 });
 
 gulp.task('watch:dist', () => {
