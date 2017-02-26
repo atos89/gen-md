@@ -1,6 +1,6 @@
 <?php
 
-require_once('./define.php');
+require_once(dirname(realpath(__FILE__)) . '/define.php');
 
 $request_uri = trim(preg_replace('/\//', ' ', $_SERVER['REQUEST_URI']));
 $routes = explode(' ', $request_uri);
