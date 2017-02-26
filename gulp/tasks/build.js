@@ -8,7 +8,7 @@ const stylus = require('gulp-stylus');
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
 
-gulp.task('build', ['clean', 'build:js', 'build:stylus']);
+gulp.task('build', ['build:js', 'build:stylus']);
 
 gulp.task('build:js', () => {
     return gulp.src([
