@@ -7,8 +7,6 @@
   </head>
   <body>
     <p><!--$obj->mess--></p>
-    <script type="text/javascript" src="/assets/js/gen-md.js">
-
-    </script>
+    <script type="text/javascript" src="/assets/js/gen-md.js"></script>
   </body>
 </html>
